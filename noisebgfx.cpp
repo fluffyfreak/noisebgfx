@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
 	//SDL_GL_SetAttribute(SDL_GL_STENCIL_SIZE, 8);
 	//SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
 	//SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
-	SDL_Window *sdl_window = SDL_CreateWindow("SDL2 + BGFX", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
+	SDL_Window *sdl_window = SDL_CreateWindow("SDL2 + BGFX test app", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 1280, 720, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
 	sdlSetWindow(sdl_window);
 
 	bgfx::init();
@@ -195,8 +195,8 @@ int main(int argc, char *argv[])
 
 		// Use debug font to print information about this example.
 		bgfx::dbgTextClear();
-		bgfx::dbgTextPrintf(0, 1, 0x4f, "bgfx/examples/01-cube");
-		bgfx::dbgTextPrintf(0, 2, 0x6f, "Description: Rendering simple static mesh.");
+		bgfx::dbgTextPrintf(0, 1, 0x4f, "Title: bgfx test app");
+		bgfx::dbgTextPrintf(0, 2, 0x6f, "Description: Rendering test.");
 		bgfx::dbgTextPrintf(0, 3, 0x0f, "Frame: % 7.3f[ms]", double(frameTime)*toMs);
 
 		float at[3] = { 0.0f, 0.0f,   0.0f };
