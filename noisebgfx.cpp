@@ -1,7 +1,11 @@
-#include <Windows.h>
-#include "SDL.h"
-#include "SDL_syswm.h"
-
+#ifdef _WIN32
+  #include <Windows.h>
+  #include "SDL.h"
+  #include "SDL_syswm.h"
+#else
+  #include "SDL2/SDL.h"
+  #include "SDL2/SDL_syswm.h"
+#endif
 #include "bx/bx.h"
 #include "bx/fpumath.h"
 #include "bx/timer.h"
