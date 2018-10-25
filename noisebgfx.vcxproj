@@ -74,7 +74,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;..\bx\3rdparty;..\bimg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -87,7 +87,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;..\bx\3rdparty;..\bimg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -102,7 +102,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;..\bx\3rdparty;..\bimg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -119,7 +119,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\SDL2-2.0.4\include;..\bgfx\include;..\bgfx\3rdparty;..\bgfx\3rdparty\dxsdk\include;..\bgfx\3rdparty\khronos;..\bx\include;..\bx\include\compat\msvc;..\bx\3rdparty;..\bimg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;__STDC_CONSTANT_MACROS;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
@@ -131,18 +131,33 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\bgfx\src\amalgamated.cpp" />
+    <ClCompile Include="..\bimg\src\image.cpp" />
+    <ClCompile Include="..\bimg\src\image_gnf.cpp" />
+    <ClCompile Include="..\bx\src\allocator.cpp" />
+    <ClCompile Include="..\bx\src\bx.cpp" />
     <ClCompile Include="..\bx\src\commandline.cpp" />
-    <ClCompile Include="..\bx\src\crtimpl.cpp" />
+    <ClCompile Include="..\bx\src\crtnone.cpp" />
     <ClCompile Include="..\bx\src\debug.cpp" />
-    <ClCompile Include="..\bx\src\fpumath.cpp" />
+    <ClCompile Include="..\bx\src\dtoa.cpp" />
+    <ClCompile Include="..\bx\src\easing.cpp" />
+    <ClCompile Include="..\bx\src\file.cpp" />
+    <ClCompile Include="..\bx\src\filepath.cpp" />
+    <ClCompile Include="..\bx\src\hash.cpp" />
+    <ClCompile Include="..\bx\src\math.cpp" />
     <ClCompile Include="..\bx\src\mutex.cpp" />
     <ClCompile Include="..\bx\src\os.cpp" />
-    <ClCompile Include="..\bx\src\sem.cpp" />
+    <ClCompile Include="..\bx\src\process.cpp" />
+    <ClCompile Include="..\bx\src\semaphore.cpp" />
+    <ClCompile Include="..\bx\src\settings.cpp" />
+    <ClCompile Include="..\bx\src\sort.cpp" />
     <ClCompile Include="..\bx\src\string.cpp" />
     <ClCompile Include="..\bx\src\thread.cpp" />
+    <ClCompile Include="..\bx\src\timer.cpp" />
+    <ClCompile Include="..\bx\src\url.cpp" />
     <ClCompile Include="noisebgfx.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\bimg\src\bimg_p.h" />
     <ClInclude Include="..\bx\include\bx\allocator.h" />
     <ClInclude Include="..\bx\include\bx\bx.h" />
     <ClInclude Include="..\bx\include\bx\cl.h" />

@@ -40,6 +40,15 @@
     <Filter Include="bx\include\tinystl">
       <UniqueIdentifier>{2d0a5e66-c233-4d1d-81b8-f23a7cae8a23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="bimg">
+      <UniqueIdentifier>{6b8a5375-dcd0-4950-93a6-910d4a8d803a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\include">
+      <UniqueIdentifier>{84fda149-2fe5-4ce7-9cf2-f73fb5315b90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\src">
+      <UniqueIdentifier>{e50049d2-a577-494a-9d6f-1650e96d5b60}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="noisebgfx.cpp">
@@ -48,16 +57,37 @@
     <ClCompile Include="..\bgfx\src\amalgamated.cpp">
       <Filter>bgfx</Filter>
     </ClCompile>
+    <ClCompile Include="..\bimg\src\image.cpp">
+      <Filter>bimg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\src\image_gnf.cpp">
+      <Filter>bimg\src</Filter>
+    </ClCompile>
     <ClCompile Include="..\bx\src\commandline.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\bx\src\crtimpl.cpp">
+    <ClCompile Include="..\bx\src\crtnone.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
     <ClCompile Include="..\bx\src\debug.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\bx\src\fpumath.cpp">
+    <ClCompile Include="..\bx\src\dtoa.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\easing.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\file.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\filepath.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\hash.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\math.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
     <ClCompile Include="..\bx\src\mutex.cpp">
@@ -66,13 +96,34 @@
     <ClCompile Include="..\bx\src\os.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
-    <ClCompile Include="..\bx\src\sem.cpp">
+    <ClCompile Include="..\bx\src\process.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\semaphore.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\settings.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\sort.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
     <ClCompile Include="..\bx\src\string.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
     <ClCompile Include="..\bx\src\thread.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\timer.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\url.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\allocator.cpp">
+      <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bx\src\bx.cpp">
       <Filter>bx\src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -223,6 +274,9 @@
     </ClInclude>
     <ClInclude Include="..\bx\include\tinystl\hash.h">
       <Filter>bx\include\tinystl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\src\bimg_p.h">
+      <Filter>bimg\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
