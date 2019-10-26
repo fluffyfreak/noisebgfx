@@ -35,10 +35,10 @@ struct PosColorVertex
 			.end();
 	};
 
-	static bgfx::VertexDecl ms_decl;
+	static bgfx::VertexLayout ms_decl;
 };
 
-bgfx::VertexDecl PosColorVertex::ms_decl;
+bgfx::VertexLayout PosColorVertex::ms_decl;
 
 static PosColorVertex s_cubeVertices[] =
 {
@@ -327,8 +327,8 @@ int main(int argc, char *argv[])
 		bgfx::dbgTextPrintf(0, 2, 0x6f, "Description: Rendering test.");
 		bgfx::dbgTextPrintf(0, 3, 0x0f, "Frame: % 7.3f[ms]", double(frameTime)*toMs);
 
-		float at[3] = { 0.0f, 0.0f,   0.0f };
-		float eye[3] = { 0.0f, 0.0f, -35.0f };
+		bx::Vec3 at{ 0.0f, 0.0f,   0.0f };
+		bx::Vec3 eye{ 0.0f, 0.0f, -35.0f };
 
 		// Set view and projection matrix for view 0.
 		{
@@ -392,7 +392,6 @@ int main(int argc, char *argv[])
 	}
 
 
-	// Cleanup
 	// Cleanup.
 	for (uint32_t ii = 0; ii < BX_COUNTOF(m_ibh); ++ii)
 	{

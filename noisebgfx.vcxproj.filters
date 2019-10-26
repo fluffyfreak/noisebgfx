@@ -43,11 +43,23 @@
     <Filter Include="bimg">
       <UniqueIdentifier>{6b8a5375-dcd0-4950-93a6-910d4a8d803a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="bimg\src">
+      <UniqueIdentifier>{e50049d2-a577-494a-9d6f-1650e96d5b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\3rdparty">
+      <UniqueIdentifier>{40f82251-3d46-4cb4-879a-12b5ee9c162d}</UniqueIdentifier>
+    </Filter>
     <Filter Include="bimg\include">
       <UniqueIdentifier>{84fda149-2fe5-4ce7-9cf2-f73fb5315b90}</UniqueIdentifier>
     </Filter>
-    <Filter Include="bimg\src">
-      <UniqueIdentifier>{e50049d2-a577-494a-9d6f-1650e96d5b60}</UniqueIdentifier>
+    <Filter Include="bimg\3rdparty\astc-codec">
+      <UniqueIdentifier>{e917e7d3-011e-46f6-b0c1-ba70b7899d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\3rdparty\astc-codec\src">
+      <UniqueIdentifier>{76f8c42e-9b6f-4ab6-8d08-fc6e47c6de11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bimg\3rdparty\astc-codec\src\decoder">
+      <UniqueIdentifier>{048b6192-a81d-4b7c-9898-6c4e3e2b4ace}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -125,6 +137,39 @@
     </ClCompile>
     <ClCompile Include="..\bx\src\bx.cpp">
       <Filter>bx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\intermediate_astc_block.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\logical_astc_block.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\partition.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\physical_astc_block.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\quantization.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\weight_infill.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\astc_file.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\codec.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\endpoint_codec.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\footprint.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\bimg\3rdparty\astc-codec\src\decoder\integer_sequence_codec.cc">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -277,6 +322,45 @@
     </ClInclude>
     <ClInclude Include="..\bimg\src\bimg_p.h">
       <Filter>bimg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\include\bimg\decode.h">
+      <Filter>bimg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\include\bimg\encode.h">
+      <Filter>bimg\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\integer_sequence_codec.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\intermediate_astc_block.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\logical_astc_block.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\partition.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\physical_astc_block.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\quantization.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\weight_infill.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\astc_file.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\codec.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\endpoint_codec.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\bimg\3rdparty\astc-codec\src\decoder\footprint.h">
+      <Filter>bimg\3rdparty\astc-codec\src\decoder</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
